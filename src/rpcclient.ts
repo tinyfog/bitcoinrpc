@@ -48,8 +48,11 @@ export class RpcClient {
         hash: result.hash,
         confirmations: result.confirmations,
         size: result.size,
+        strippedsize: result.strippedsize,
         height: result.height,
+        weight: result.weight,
         version: result.version,
+        versionHex: result.versionHex,
         merkleroot: result.merkleroot,
         tx: result.tx,
         time: result.time,
@@ -150,64 +153,3 @@ const rpcUsername = process.env.BITCOINRPCUSER || "Satoshi";
 const rpcPassword = process.env.BITCOINRPCPASSWD || "Nakamoto";
 
 const client = new RpcClient(rpcUrl, rpcUsername, rpcPassword);
-
-client.getBestBlockHash()
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-
-
-client.getBlock("0000000000000000000207d22adf58cb0397063e35a9c13672cd4d0c53a2ba7d")
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-
-  client.getBlockchainInfo()
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-
-  client.getBlockCount()
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-
-  client.getBlockHash(778228)
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-
-  client.getBlockHeader("00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09")
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-
-  client.getBlockFilter("00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09", "basic")
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-
-  console.log("Tests passed.")
-
-

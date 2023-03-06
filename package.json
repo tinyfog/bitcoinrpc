@@ -5,7 +5,7 @@
   "main": "dist/rpcclient.js",
   "scripts": {
     "build": "tsc --watch",
-    "test": "npx jest dist/test/getBlockHeader.test.js",
+    "test": "npx jest dist/tests",
     "run": "node dist/rpcclient.js"
   },
   "repository": {

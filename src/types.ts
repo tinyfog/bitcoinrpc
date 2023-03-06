@@ -46,8 +46,11 @@ export interface Block {
     hash: string;
     confirmations: number;
     size: number;
+    strippedsize: number;
     height: number;
+    weight: number;
     version: number;
+    versionHex: string;
     merkleroot: string;
     tx: string[];
     time: number;
