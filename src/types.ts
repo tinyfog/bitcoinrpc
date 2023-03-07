@@ -14,33 +14,24 @@ export interface RpcResponse {
     id: string;
 }
 
-export interface BlockchainInfo {
+export type BlockchainInfo = {
     chain: string;
     blocks: number;
     headers: number;
     bestblockhash: string;
     difficulty: number;
+    time: number;
     mediantime: number;
     verificationprogress: number;
+    initialblockdownload: boolean;
     chainwork: string;
+    sizeondisk: number;
     pruned: boolean;
-    softforks: {
-        id: string;
-        version: number;
-        reject: {
-            status: boolean;
-        }
-    }[];
-    bip9_softforks: {
-        name: string;
-        status: string;
-        bit: number;
-        startTime: number;
-        timeout: number;
-        since: number;
-    }[];
+    pruneheight?: number;
+    automaticpruning?: boolean;
+    prunetargetsize?: number;
     warnings: string;
-}
+};
 
 export interface Block {
     hash: string;

@@ -78,12 +78,16 @@ export class RpcClient {
         headers: result.headers,
         bestblockhash: result.bestblockhash,
         difficulty: result.difficulty,
+        time: result.time,
         mediantime: result.mediantime,
         verificationprogress: result.verificationprogress,
+        initialblockdownload: result.initialblockdownload,
         chainwork: result.chainwork,
+        sizeondisk: result.sizeondisk,
+        pruneheight: result.pruneheight,
+        automaticpruning: result.automaticpruning,
+        prunetargetsize: result.prunetargetsize,
         pruned: result.pruned,
-        softforks: result.softforks,
-        bip9_softforks: result.bip9_softforks,
         warnings: result.warnings
       };
     } catch (error) {
