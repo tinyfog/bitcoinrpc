@@ -61,6 +61,7 @@ export class RpcClient {
         bits: result.bits,
         difficulty: result.difficulty,
         chainwork: result.chainwork,
+        nTx: result.nTx,
         previousblockhash: result.previousblockhash,
         nextblockhash: result.nextblockhash
       };
@@ -141,6 +142,7 @@ export class RpcClient {
         bits: result.bits,
         difficulty: result.difficulty,
         chainwork: result.chainwork,
+        nTx: result.nTx,
         previousblockhash: result.previousblockhash,
         nextblockhash: result.nextblockhash
       };

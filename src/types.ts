@@ -38,8 +38,8 @@ export interface Block {
     confirmations: number;
     size: number;
     strippedsize: number;
-    height: number;
     weight: number;
+    height: number;
     version: number;
     versionHex: string;
     merkleroot: string;
@@ -50,9 +50,11 @@ export interface Block {
     bits: string;
     difficulty: number;
     chainwork: string;
+    nTx: number;
     previousblockhash: string;
-    nextblockhash: string;
-}
+    nextblockhash?: string;
+  }
+  
 
 export interface BlockCountResult {
     count: number;
@@ -76,6 +78,8 @@ export interface BlockHeader {
     bits: string;
     difficulty: number;
     chainwork: string;
+    nTx: number;
     previousblockhash: string;
-    nextblockhash?: string;
-}
+    nextblockhash: string;
+  }
+  

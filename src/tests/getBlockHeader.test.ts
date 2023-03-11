@@ -16,6 +16,7 @@ describe('getBlockHeader', () => {
       nonce: 2573394689,
       bits: '1d00ffff',
       difficulty: 1,
+      nTx: 1,
       chainwork: '0000000000000000000000000000000000000000000000000000040004000400',
       previousblockhash: '00000000b0cc4c91314413a18b31f2b451e8b1a0ae047f322fd2c15a91dcd6e1',
       nextblockhash: '00000000d06f2d16f05a8b9e99d9a6a771908b7ea75701062c77d5a5b7a5dc5f'

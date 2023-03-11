@@ -21,6 +21,7 @@ describe('getBlock', () => {
     bits: '1d00ffff',
     difficulty: 1,
     chainwork: '000000000000000000000000000000000000000000000000000003e903a7a321',
+    nTx: 1,
     previousblockhash: '0000000013459c2244b4c4bda5d6945082f488c7f0f8a79a54fa393f80ee9a5a',
     nextblockhash: '00000000c41c1d0a28c9f3ee5dd5dfb156882d5ec1e5e5c431ecaa1e988a5478',
   };
